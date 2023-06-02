@@ -12,7 +12,6 @@ services:
       - ../storage/framework/:/source/storage/framework/
       - ../storage/logs/:/source/storage/logs/
       - ../app:/source/app
-      - ../presets:/source/presets
       - ../bootstrap:/source/bootstrap
       - ../config:/source/config
       - ../database:/source/database
@@ -21,14 +20,11 @@ services:
       - ../routes:/source/routes
       - ../tests:/source/tests
       - ../.env.example:/source/.env.example
-      - ../.styleci.yml:/source/.styleci.yml
       - ../artisan:/source/artisan
       - ../composer.json:/source/composer.json
       - ../composer.lock:/source/composer.lock
       - ../package.json:/source/package.json
       - ../phpunit.xml:/source/phpunit.xml
-      - ../server.php:/source/server.php
-      - ../webpack.mix.js:/source/webpack.mix.js
       - ./default.conf:/etc/nginx/conf.d/default.conf
   php:
     container_name: "laravel-modern-cart-php"
@@ -44,7 +40,6 @@ services:
       - ../storage/framework/:/source/storage/framework/
       - ../storage/logs/:/source/storage/logs/
       - ../app:/source/app
-      - ../presets:/source/presets
       - ../bootstrap:/source/bootstrap
       - ../config:/source/config
       - ../database:/source/database
@@ -53,14 +48,11 @@ services:
       - ../routes:/source/routes
       - ../tests:/source/tests
       - ../.env.example:/source/.env.example
-      - ../.styleci.yml:/source/.styleci.yml
       - ../artisan:/source/artisan
       - ../composer.json:/source/composer.json
       - ../composer.lock:/source/composer.lock
       - ../package.json:/source/package.json
       - ../phpunit.xml:/source/phpunit.xml
-      - ../server.php:/source/server.php
-      - ../webpack.mix.js:/source/webpack.mix.js
       - ./php.ini:/usr/local/etc/php/php.ini
   mariadb:
     container_name: "mariadb"
