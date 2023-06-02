@@ -1,0 +1,39 @@
+pipeline {
+    agent any
+    environment {
+        BRANCH_NAME = "${GIT_BRANCH.split('/')[1]}"
+    }
+    stages {
+        // git으로부터 소스 다운하는 stage
+        stage('Checkout') {
+            steps {
+                checkout scm
+                echo "Checkout"
+            }
+        }
+
+        stage('Deploy on-premise ssh'){
+            steps{
+                sshPublisher(
+                    continueOnError: false,
+                    failOnError: true,
+                    publishers: [
+                        sshPublisherDesc(
+                            configName: "195_backend",
+                            verbose: true,
+                            transfers: [
+                                sshTransfer(execCommand: "cd /home/backend/api/${BRANCH_NAME} && git pull && sudo chmod 0777 -R storage/"),
+                            ]
+                        )
+                    ]
+                )
+            }
+        }
+
+        stage('Complete') {
+            steps {
+                sh "echo 'The end'"
+            }
+        }
+    }
+}
