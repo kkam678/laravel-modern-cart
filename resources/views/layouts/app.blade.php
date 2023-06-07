@@ -21,7 +21,7 @@
 
             <!-- Page Heading -->
             @if (isset($menu))
-                <header class="bg-white dark:bg-gray-800 shadow">
+                <header class="bg-white dark:bg-gray-800 shadow relative overflow-visible">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
                         {{ $menu }}
                     </div>
