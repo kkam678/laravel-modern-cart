@@ -12,4 +12,5 @@ return [
     'allCategory' => '전체 카테고리',
     'searchProduct' => '상품을 검색해 보세요',
     'footerDescription' => 'MODERN CART는 Laravel을 기반으로 만든 오픈소스 쇼핑몰 입니다',
+    'more' => '더 보기',
 ];

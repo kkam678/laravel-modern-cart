@@ -45,6 +45,62 @@ class MainController extends Controller
                 'reviewPoint' => 4.9,
                 'reviewCount' => 999,
             ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item1.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item2.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item3.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item4.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item1.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item2.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item3.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
+            [
+                'imageUrl' => \Illuminate\Support\Facades\Vite::asset('resources/images/item4.jpeg'),
+                'name' => '맛있닭 소스 닭가슴살 스테이크 혼합 150g',
+                'price' => 20900,
+                'reviewPoint' => 4.9,
+                'reviewCount' => 999,
+            ],
         ];
         return view('index', ['items' => $items]);
     }
