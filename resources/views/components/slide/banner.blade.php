@@ -12,13 +12,13 @@
 <div class="dark:bg-gray-900 swiper mobile-banner-slide block lg:hidden">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="{{ Vite::asset('resources/images/m_banner1.jpg') }}" alt="banner"/>
+            <img class="w-full" src="{{ Vite::asset('resources/images/m_banner1.jpg') }}" alt="banner"/>
         </div>
         <div class="swiper-slide">
-            <img src="{{ Vite::asset('resources/images/m_banner2.jpg') }}" alt="banner"/>
+            <img class="w-full" src="{{ Vite::asset('resources/images/m_banner2.jpg') }}" alt="banner"/>
         </div>
         <div class="swiper-slide">
-            <img src="{{ Vite::asset('resources/images/m_banner3.jpg') }}" alt="banner"/>
+            <img class="w-full" src="{{ Vite::asset('resources/images/m_banner3.jpg') }}" alt="banner"/>
         </div>
     </div>
 </div>

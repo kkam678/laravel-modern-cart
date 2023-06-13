@@ -10,17 +10,20 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/468b458a15.js" crossorigin="anonymous"></script>
 
     <!-- Scripts -->
-    @vite(['resources/js/jquery-3.7.0.min.js','resources/css/app.css', 'resources/js/app.js','resources/js/nav.js'])
+    @vite([
+        'resources/js/jquery-3.7.0.min.js',
+        'resources/js/fontawesome.min.js',
+        'resources/css/app.css',
+        'resources/js/app.js',
+        'resources/js/nav.js'
+    ])
 
 </head>
 <body class="font-sans antialiased">
 <div class="min-h-screen bg-white dark:bg-gray">
     @include('layouts.navigation')
-
-
 
     @if (isset($banner))
         <div class="w-full h-auto">
@@ -28,13 +31,14 @@
         </div>
     @endif
 
-
     <!-- Page Content -->
     <main>
         {{ $slot }}
     </main>
 
-    @include('layouts.footer')
+    <footer class="pb-16 lg:pb-0">
+        @include('layouts.footer')
+    </footer>
     @stack('js')
 </div>
 </body>
