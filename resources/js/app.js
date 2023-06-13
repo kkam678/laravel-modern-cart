@@ -13,6 +13,11 @@ const bannerSwiper = new Swiper('.banner-slide', {
     // Swiper 옵션 설정
 });
 
+const mobileBannerSwiper = new Swiper('.mobile-banner-slide', {
+    autoHeight:true
+});
+
+
 const mainProductSwiper = new Swiper('.main-product-slide', {
     // Swiper 옵션 설정
     slidesPerView:4,
