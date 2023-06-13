@@ -16,6 +16,7 @@ services:
       - ../config:/source/config
       - ../database:/source/database
       - ../public:/source/public
+      - ../lang/:/lang/
       - ../resources:/source/resources
       - ../routes:/source/routes
       - ../tests:/source/tests
@@ -44,6 +45,7 @@ services:
       - ../config:/source/config
       - ../database:/source/database
       - ../public:/source/public
+      - ../lang/:/source/lang/
       - ../resources:/source/resources
       - ../routes:/source/routes
       - ../tests:/source/tests
